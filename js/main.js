@@ -1,1 +1,52 @@
-$(document).ready(function(){$(window).scroll(function(){var scrollt=document.documentElement.scrollTop+document.body.scrollTop;if(scrollt>200){$("#gotop").fadeIn(400);if($(window).width()>=1200){$(".navbar").stop().fadeTo(400,0.2);}}else{$("#gotop").fadeOut(400);if($(window).width()>=1200){$(".navbar").stop().fadeTo(400,1);}}});$("#gotop").click(function(){$("html,body").animate({scrollTop:"0px"},200);});$(".navbar").mouseenter(function(){$(".navbar").fadeTo(100,1);});$(".navbar").mouseleave(function(){var scrollt=document.documentElement.scrollTop+document.body.scrollTop;if(scrollt>200){$(".navbar").fadeTo(100,0.2);}});replaceMeta();$(window).resize(function(){replaceMeta();});});replaceMeta=function(){if($(window).width()<980){if($("#side_meta #post_meta").length>0){$("#post_meta").appendTo("#top_meta");}if($("#sidebar #site_search").length>0){$("#site_search").appendTo("#top_search");$("#site_search #st-search-input").css("width","95%");}}else{if($("#top_meta #post_meta").length>0){$("#post_meta").appendTo("#side_meta");}if($("#top_search #site_search").length>0){$("#site_search").prependTo("#sidebar");$("#site_search #st-search-input").css("width","85%");}}};
+
+// Highlight current nav item
+var hasCurrent = false;
+$('#main-nav > li').each(function () {
+	var url = window.location.href;
+	if(url.toUpperCase().indexOf($(this).text().trim().toUpperCase()) != -1){
+		$(this).addClass('current-menu-item current_page_item');
+		hasCurrent = true;
+	} else {
+		$(this).removeClass('current-menu-item current_page_item');
+	}
+});
+
+if (!hasCurrent) {
+	$('#main-nav > li:first').addClass('current-menu-item current_page_item');
+}
+
+
+
+// article toc
+var toc = document.getElementById('toc')
+
+if (toc != null) {
+	window.addEventListener("scroll", scrollcatelogHandler);
+	var tocPosition = 194+25;
+
+	function scrollcatelogHandler(e) {
+		 var event = e || window.event,
+		     target = event.target || event.srcElement;
+		 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		 if (scrollTop > tocPosition) {
+		     toc.classList.add("toc-fixed");
+		 } else {
+		     toc.classList.remove("toc-fixed");
+		 }
+	}
+}
+
+
+$('#main-navigation').on('click', function(){
+    if ($('#main-navigation').hasClass('main-navigation-open')){
+      $('#main-navigation').removeClass('main-navigation-open');
+    } else {
+      $('#main-navigation').addClass('main-navigation-open');
+    }
+  });
+
+$('#content').on('click', function(){
+    if ($('#main-navigation').hasClass('main-navigation-open')){
+      $('#main-navigation').removeClass('main-navigation-open');
+    }
+  });
