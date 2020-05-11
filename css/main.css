@@ -195,8 +195,8 @@ a {
 }
 /* index */
 #content{
-	max-width: 250px;
-	top: 50px;
+	max-width: 950px;
+	top: 250px;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0;
