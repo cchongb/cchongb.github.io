@@ -200,7 +200,7 @@ a {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0;
-	margin: 80px auto 230px auto;
+	margin: 80px auto 30px auto;
 }
 .index-li {
 	margin: 20px 0 20px 0;
@@ -212,7 +212,7 @@ a {
 
 .index-brief{
     position: relative;
-	padding: 5px 5px 10px 5px;
+	padding: 5px 5px 1000px 5px;
 	font-size: 14px;
 }
 
