@@ -268,7 +268,6 @@ a {
 #article-content {
 	padding: 10px 0;
 	border-bottom: 2px solid #ddd;
-	line-height: 100px;
 }
 #article-content ol,
 #article-content ul {
@@ -322,7 +321,7 @@ a {
 	border-left: .25em solid #dfe2e5;
 }
 #article-content p {
-	line-height: 20px;
+	line-height: 100px;
 	margin-bottom: 10px;
 }
 #article-content ul code,
