@@ -195,11 +195,11 @@ a {
 }
 /* index */
 #content{
-	max-width: 850px;
-	top: 150px;
-	flex-grow: 30px;
-	flex-shrink: 50%;
-	flex-basis: 20px;
+	max-width: 250px;
+	top: 50px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
 	margin: 80px auto 30px auto;
 }
 .index-li {
