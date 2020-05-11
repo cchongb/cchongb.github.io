@@ -197,7 +197,7 @@ a {
 #content{
 	max-width: 850px;
 	top: 50px;
-	flex-grow: 1;
+	flex-grow: 0;
 	flex-shrink: 0;
 	flex-basis: 0;
 	margin: 80px auto 30px auto;
