@@ -212,8 +212,9 @@ a {
 
 .index-brief{
     position: relative;
-	padding: 5px 5px 1000px 5px;
+	padding: 5px 5px 10px 5px;
 	font-size: 14px;
+	line-height: 100px
 }
 
 .index-li *:hover {
