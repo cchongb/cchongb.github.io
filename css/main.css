@@ -196,9 +196,9 @@ a {
 /* index */
 #content{
 	max-width: 950px;
-	top: 250px;
-	flex-grow: 1;
-	flex-shrink: 1;
+	top: 50px;
+	flex-grow: 100;
+	flex-shrink: 100;
 	flex-basis: 0;
 	margin: 80px auto 30px auto;
 }
