@@ -267,6 +267,7 @@ a {
 	margin-left: 20px;
 }
 #article-content {
+	max-width: 1550px;
 	padding: 10px 0;
 	border-bottom: 2px solid #ddd;
 }
@@ -322,7 +323,6 @@ a {
 	border-left: .25em solid #dfe2e5;
 }
 #article-content p {
-	max-width: 1550px;
 	line-height: 27px;
 	margin: 0px 25px 10px 25px;
 }
