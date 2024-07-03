@@ -1,0 +1,108 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+				color: #555;
+				line-height: 150%;
+			}
+
+a { 
+			   color: darkred; 
+			  }
+			  
+a:active {
+			   color: gray;
+			   }
+
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: ;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: gray;
+}
+
+main {
+				float: left;
+				width: 100%;
+			}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+.innertube{
+				margin-left: 45px; margin-right: 45px; /* Padding for content */
+				margin-bottom: 30px;
+			}
+			
+#indexfig {
+				margin-left: 580px; /* 'nav' width is 230px*/
+				margin-right: 350px; 
+				margin-top: 50px;
+			}
+.mainimg {
+	            position: relative;
+	            margin-bottom: 30px;
+	            img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+				}
+#nav {
+			
+			}
+			
+nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+nav li {
+				list-style-type: none;
+				margin-top: 10px;
+				
+				padding: 0;
+			}
+			
+nav ul a {
+				color: black;
+				text-decoration: ;
+			}
+			
+
+
+#new {
+	
+}
+
+/*日付(dt)、記事(dd)共通設定*/
+#new dt {
+	float: left;
+	padding: 5px 0;
+}
+#new dd {
+	overflow: hidden;
+	margin-left: 180px;
+	padding: 5px 0;		/*上下、左右へのボックス内の余白*/
+}
+
