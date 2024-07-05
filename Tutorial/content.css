@@ -61,14 +61,14 @@
     background: white;
     text-align: left;
     width: 127px;
-    height: 30px;
+    height: 40px;
     line-height: 30px;
     overflow: hidden;
 	padding-left: 13px;
 	font-size: 70%;
 }
 .drop:hover{
-    background: gray;
+    background: #171717;
     cursor: pointer;
 }
 /* END */
