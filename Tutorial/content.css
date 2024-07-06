@@ -60,7 +60,7 @@
 .drop{
     background: white;
     text-align: left;
-    width: 127px;
+    width: 160px;
     height: 40px;
     line-height: 30px;
     overflow: hidden;
@@ -75,3 +75,9 @@
 .contentgap{
 	margin:15px 0 15px 0;
 }
+
+.Tinnertube{
+				margin-left: 35px; margin-right: 25px; /* Padding for content */
+				margin-bottom: 30px;
+			}
+
