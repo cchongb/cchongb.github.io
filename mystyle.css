@@ -5,6 +5,7 @@ body {
 p {
 				color: #555;
 				line-height: 150%;
+				
 			}
 
 a { 
@@ -56,6 +57,7 @@ main {
 				margin-left: 45px; margin-right: 45px; /* Padding for content */
 				margin-bottom: 30px;
 			}
+
 			
 #indexfig {
 				margin-left: 580px; /* 'nav' width is 230px*/
