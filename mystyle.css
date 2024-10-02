@@ -20,7 +20,7 @@ a:active {
 
 .sidenav {
   height: 100%;
-  width: 16%;
+  width: 18%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -54,18 +54,18 @@ main {
 }
 
 #content {
-				margin-left: 16%; /* Same as 'nav' width */
+				margin-left: 18%; /* Same as 'nav' width */
 			}
 			
 .innertube{
-				margin-left: 4.5%; margin-right: 3.5%; /* Padding for content */
+				margin-left: 4.5%; margin-right: 4.5%; /* Padding for content */
 				margin-bottom: 2.5%;
 			}
 
 			
 #indexfig {
-				margin-left: 43%; /* 'nav' width is 230px*/
-				margin-right: 27%; 
+				margin-left: 18%; /* 'nav' width is 230px*/
+				margin-right: 0%; 
 				margin-top: 3.5%;
 			}
 .mainimg {
