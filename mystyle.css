@@ -1,0 +1,146 @@
+body {
+  font-size: 105%;
+  font-family: "STSong", sans-serif;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+  line-height: 150%;
+}
+
+a {
+  color: darkred;
+}
+
+a:active {
+  color: gray;
+}
+
+.sidenav {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  padding-top: 2%;
+}
+
+.sidenav a {
+  padding: 2% 2% 4%;
+  color: black;
+  display: block;
+  font-size: 1em;
+}
+
+.sidenav a:hover {
+  color: gray;
+}
+
+main {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 2%;
+  }
+
+  .sidenav a {
+    font-size: 1em;
+  }
+}
+
+#content {
+  margin-left: 18%;
+}
+
+.innertube {
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  margin-bottom: 2.5%;
+}
+
+#indexfig {
+  margin-left: 18%;
+  margin-right: 0;
+  margin-top: 3.5%;
+}
+
+.mainimg {
+  position: relative;
+  margin-bottom: 8%;
+}
+
+.mainimg img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-top: 5%;
+  padding: 0;
+}
+
+nav ul a {
+  color: black;
+}
+
+#new dt {
+  float: left;
+  padding: 0.45% 0;
+}
+
+#new dd {
+  overflow: hidden;
+  margin-left: 180px;
+  padding: 0.45% 0;
+}
+
+.caption-block {
+  position: relative;
+  width: 100%;
+}
+
+.caption-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.spaced-list-item {
+  margin: 10px -15px;
+}
+
+.detail-list {
+  margin: 0 0 20px;
+}
+
+.detail-list--wide {
+  margin: 0 20px 30px;
+}
+
+.detail-list__title {
+  margin: 0 0 15px;
+}
+
+.detail-list__item {
+  margin: 8px 0;
+}
+
+.detail-list__item--offset {
+  margin: 5px 15px;
+}
