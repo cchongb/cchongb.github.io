@@ -1,0 +1,14 @@
+@import url("../assets/css/section-content.css");
+
+.Tinnertube {
+    margin-left: 35px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
