@@ -63,11 +63,11 @@
       return renderRoomIndexSidebar();
     }
 
-    if (/^Room\/Hardware\.html$/i.test(pagePath)) {
-      return renderRoomHardwareSidebar();
+    if (/^Room\/Article\.html$/i.test(pagePath)) {
+      return renderRoomArticleSidebar();
     }
 
-    if (/^Room\/Hardware\/Bit\.html$/i.test(pagePath)) {
+    if (/^Room\/Article\/Hardware\/Bit\.html$/i.test(pagePath)) {
       return renderRoomBitSidebar();
     }
 
@@ -100,7 +100,8 @@
       '        <li><a href="' + url('index.html') + '"' + currentAttr(currentPath, 'index.html') + '>HOME</a></li>',
       '        <li><a href="' + url('CV.html') + '"' + currentAttr(currentPath, 'CV.html') + '>CV</a></li>',
       '        <li><a href="' + url('research.html') + '"' + currentAttr(currentPath, 'research.html') + '>RESEARCH</a></li>',
-      '        <li><a href="' + url('publication.html') + '"' + currentAttr(currentPath, 'publication.html') + '>PUBLICATION</a></li>',
+      '        <li><a href="' + url('publication.html') + '"' + currentAt
+tr(currentPath, 'publication.html') + '>PUBLICATION</a></li>',
       '        <li><a href="' + url('other.html') + '"' + currentAttr(currentPath, 'other.html') + '>OTHER</a></li>',
       '      </ul>',
       '    </div>',
@@ -185,21 +186,21 @@
   function renderRoomIndexSidebar() {
     return renderSectionSidebar({
       backHtml: '<img src="' + url('Room/Rimage/tra-re.png') + '" height="12em">BACK to HOMEPAGE',
-      contentHtml: '<a href="' + url('Room/Hardware.html') + '" align="middle"><u>游戏硬件</u></a>'
+      contentHtml: '<a href="' + url('Room/Article.html') + '" align="middle"><u>文章</u></a>'
     });
   }
 
-  function renderRoomHardwareSidebar() {
+  function renderRoomArticleSidebar() {
     return renderSectionSidebar({
       backHtml: '<img src="' + url('Room/Rimage/tra-re.png') + '" height="12em">BACK to HOMEPAGE',
-      contentHtml: '<a href="' + url('Room/Hardware.html') + '" align="middle" aria-current="page"><u>游戏硬件</u></a>'
+      contentHtml: '<a href="' + url('Room/Article.html') + '" align="middle" aria-current="page"><u>文章</u></a>'
     });
   }
 
   function renderRoomBitSidebar() {
     return renderSectionSidebar({
       backHtml: '<img src="' + url('Room/Rimage/tra-re.png') + '" height="12em">BACK to HOMEPAGE',
-      contentHtml: '<a href="' + url('Room/Hardware.html') + '" align="middle"><u>游戏硬件</u></a>'
+      contentHtml: '<a href="' + url('Room/Article.html') + '" align="middle"><u>文章</u></a>'
     });
   }
 })();
