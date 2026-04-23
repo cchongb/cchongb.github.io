@@ -1,0 +1,28 @@
+iframe 侧边栏维护说明
+=====================
+
+这个版本不再用 JS 注入侧边栏，而是改成了 iframe 方式。
+以后改侧边栏时，不需要逐个改所有 HTML，只要改对应的共享侧边栏文件即可。
+
+需要改的文件：
+1. 根目录页面共用侧边栏：sidebar-home.html
+2. Tutorial 区域共用侧边栏：Tutorial/sidebar.html
+3. Room 区域共用侧边栏：Room/sidebar.html
+4. index(old).html 的旧版侧边栏：sidebar-home-legacy.html
+5. 侧边栏共用样式：sidebar.css
+
+页面里的接入方式：
+- 根目录页面：<iframe class="sidebar-frame" src="sidebar-home.html"></iframe>
+- Tutorial 首页：<iframe class="sidebar-frame" src="sidebar.html"></iframe>
+- Tutorial 子页面：<iframe class="sidebar-frame" src="../sidebar.html"></iframe>
+- Room 首页：<iframe class="sidebar-frame" src="sidebar.html"></iframe>
+- Room 子页面：<iframe class="sidebar-frame" src="../sidebar.html"></iframe>
+
+如果你以后新增页面：
+- 根目录新页面：复制一个根目录页面，并保留 iframe 指向 sidebar-home.html
+- Tutorial 新页面：放在 Tutorial 下就用 sidebar.html，放在 Tutorial 的子目录里就用 ../sidebar.html
+- Room 新页面：放在 Room 下就用 sidebar.html，放在 Room 的子目录里就用 ../sidebar.html
+
+注意：
+- iframe 里的链接都已经用了 target="_top"，点击后会直接跳转整个页面，而不是只在 iframe 里跳转。
+- 如果你想新增一个菜单项，就直接打开对应的 sidebar*.html 文件，增加一条 <a> 链接即可。
